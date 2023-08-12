@@ -63,17 +63,17 @@ p{
 @media screen and (min-width: 320px) and (max-width: 480px) {
     /* Your CSS code here */
     h1{
-        text-align: center;
+        font-size: 1.75em;
     }
     .main{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 253px;
+        width: 300px;
     }
     .content{
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         width: 55%;
         height: 250px;
