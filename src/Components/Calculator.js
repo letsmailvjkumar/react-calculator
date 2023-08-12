@@ -7,6 +7,7 @@ const Calculator = ()=>{
     const[operation, setOperation] = useState("")
     const[error, setError] = useState("")
 
+    // get the input from user
     function inputFirst(event){
         setNum1(event.target.value);
     }
@@ -14,6 +15,7 @@ const Calculator = ()=>{
         setNum2(event.target.value);
     }
 
+    // error validation
     function validateInput(){
         
         if(num1 === ""){
@@ -33,6 +35,7 @@ const Calculator = ()=>{
     }
 
 
+    // perform addition,subtraction,multiplication and division
     function calculateSum(){
         if(validateInput()){
             setResult(Number(num1)+Number(num2))
