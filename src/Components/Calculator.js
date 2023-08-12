@@ -74,8 +74,8 @@ const Calculator = ()=>{
              {error && <h3 className="error">Error!</h3>}
              {error === "Num1 cannot be empty" && <h4 className="error-message">Num1 Cannot Be Empty</h4>}
              {error === "Num2 cannot be empty" && <h4 className="error-message">Num2 Cannot Be Empty</h4>}
-             {error && <h4 className="error-message">{error}</h4>}
-             {!error && operation && <h3 className="success!">Success!</h3>}
+             {error === "Please enter valid numbers" && <h4 className="error-message">Please enter valid numbers</h4>}
+             {!error && operation && <h3 className="success">Success!</h3>}
             {!error && operation === "+" && <h4>Result: {result}</h4>}
             {!error && operation === "-" && <h4>Result: {result}</h4>}
             {!error && operation === "*" && <h4>Result: {result}</h4>}
